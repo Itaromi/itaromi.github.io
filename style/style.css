@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Jetbrains";
+    src: url('/assets/fonts/ttf/JetBrainsMono-Medium.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: Po;
+    display: flex;
+    font-family: "Jetbrains";
+    margin: 0 10rem 0 10rem;
+}
+
+header, body {
+    width: 100%;
+}
+
+img {
+    width: 50px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+.presentation {
+    display: flex;
+    align-items: center;
+}
