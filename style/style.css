@@ -1,0 +1,227 @@
+@font-face {
+    font-family: "Jetbrains";
+    src: url('/assets/fonts/ttf/JetBrainsMono-Medium.ttf');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    cursor: url('/assets/images/icons/arrowhead-rounded-outline.svg'), auto;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "Jetbrains", sans-serif;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: white;
+    margin: 0 5rem 0 5rem; 
+}
+
+.logo span {
+    cursor: url('/assets/images/icons/hand-pointer.svg'), auto;
+}
+
+.presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem; 
+}
+
+.presentation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.Itaromi-img img {
+    max-width: 100%;
+    height: auto;
+    width: 300px; 
+    border-radius: 50%;
+}
+
+.discover {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+.discover h1 {
+    font-size: 3rem;
+}
+
+.discover h2 {
+    font-size: 2rem;
+    color: gray;
+}
+
+.button-action {
+    margin-top: 1.5rem;
+}
+
+.button-action button {
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: url('/assets/images/icons/hand-pointer.svg'), auto;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    cursor: url('/assets/images/icons/hand-pointer.svg'), auto;
+}
+
+ul li {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: url('/assets/images/icons/hand-pointer.svg'), auto;
+}
+
+.area {
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    position: fixed; /* Remplace 'absolute' par 'fixed' pour s'assurer que cela couvre toute la page */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Garde-le derrière la navigation */
+}
+
+.squares {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.squares li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(200, 200, 200, 0.5); /* Light gray */
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+}
+
+.squares li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.squares li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.squares li:nth-child(3) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.squares li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.squares li:nth-child(5) {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.squares li:nth-child(6) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.squares li:nth-child(7) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.squares li:nth-child(8) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.squares li:nth-child(9) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.squares li:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 0; /* Ensures the squares remain squares */
+    }
+}
