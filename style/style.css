@@ -23,15 +23,16 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #fff;
-    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.8); 
+    z-index: 1;
 }
+
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 1rem 0;    
     background-color: white;
     margin: 0 5rem 0 5rem; 
 }
@@ -53,6 +54,11 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 50%;
+}
+
+.Itaromi-img {
+    z-index: 20; 
+    position: relative; 
 }
 
 .Itaromi-img img {
@@ -91,13 +97,16 @@ header {
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
-    cursor: url('/assets/images/icons/hand-pointer.svg'), auto;
 }
 
 ul li {
     list-style: none;
     display: flex;
     gap: 1rem;
+}
+
+.social-links  img {
+    cursor: url('/assets/images/icons/hand-pointer.svg'), auto;
 }
 
 a {
@@ -109,12 +118,13 @@ a {
 
 .area {
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
-    position: fixed; /* Remplace 'absolute' par 'fixed' pour s'assurer que cela couvre toute la page */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Garde-le derrière la navigation */
+    z-index: 10; /* Les carrés passent au-dessus de tout, sauf de l'image Itaromi */
+    pointer-events: none; /* Les carrés ne bloquent pas les interactions avec le contenu en dessous */
 }
 
 .squares {
@@ -124,6 +134,8 @@ a {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    z-index: 10; /* Au-dessus de la navbar */
+    pointer-events: none; /* Permet les clics sur les éléments en dessous */
 }
 
 .squares li {
@@ -132,7 +144,7 @@ a {
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(200, 200, 200, 0.5); /* Light gray */
+    background: rgba(200, 200, 200, 0.5); 
     animation: animate 25s linear infinite;
     bottom: -150px;
 }
