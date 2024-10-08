@@ -68,7 +68,7 @@ header {
 .Itaromi-img img {
     max-width: 100%;
     height: auto;
-    width: 250px; 
+    width: 300px; 
     border-radius: 50%;
     margin-bottom: 1rem; 
 }
@@ -260,6 +260,16 @@ a {
     height: 150px;
     animation-delay: 0s;
     animation-duration: 11s;
+}
+
+footer img {
+    cursor: url('/assets/images/icons/hand-pointer.svg'), auto;
+    display: flex;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 1rem;
+    z-index: 1000;
 }
 
 @keyframes animate {
