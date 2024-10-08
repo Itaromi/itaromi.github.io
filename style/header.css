@@ -19,6 +19,10 @@ header {
     cursor: url('/assets/images/icons/arrowhead-rounded-outline.svg'), auto;
 }
 
+.navbar a {
+    cursor: url('/assets/images/icons/hand-pointer.svg')
+}
+
 .logo span {
     cursor: url('/assets/images/icons/hand-pointer.svg'), auto;
 }

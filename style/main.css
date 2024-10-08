@@ -20,11 +20,11 @@
 body {
     height: 100%;
     margin: 0 10rem;
+    cursor: url('/assets/images/icons/arrowhead-rounded-outline.svg'), auto;
 }
 
 a {
     color: var(--color-main-black);
     text-decoration: none;
     font-weight: bold;
-    cursor: url('/assets/images/icons/arrowhead-rounded-outline.svg'), auto;
 }
