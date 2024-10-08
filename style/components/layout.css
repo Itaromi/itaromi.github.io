@@ -1,4 +1,5 @@
 /* layout.css */
+
 .presentation {
     display: flex;
     justify-content: center;
@@ -64,5 +65,77 @@ ul li {
 .social-links img {
     cursor: url('/assets/images/icons/hand-pointer.svg'), auto;
     width: 100%;
+    height: 50px;
+}
+
+.aboutme-section-transition {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.aboutme-section-transition p {
+    color: gray;
+}
+
+.aboutme-section-transition h1 {
+    margin-top: 0.5rem;
+    color: var(--color-main-black);
+    font-size: 3rem;
+}
+
+.aboutme-section {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme-section img {
+    height: auto;
+    width: 25rem;
+    border-radius: 20px;
+}
+
+.aboutme-section-information {
+    margin-left: 10rem;
+    display: flex;
+    gap: 5rem;
+}
+
+.aboutme-section-experience {
+    display: flex;
+    flex-direction: column;
+    border: solid 2px gray;
+    text-align: center;
+    border-radius: 20px;
+    padding: 3rem;
+}
+
+.aboutme-section-experience p{
+    color: gray;
+}
+
+.aboutme-section-experience img{
+    height: 50px;
+}
+
+
+.aboutme-section-education {
+    display: flex;
+    flex-direction: column;
+    border: solid 2px gray;
+    text-align: center;
+    border-radius: 20px;
+    padding: 3rem;
+}
+
+.aboutme-section-education p {
+    color: gray;
+}
+
+.aboutme-section-education img{
     height: 50px;
 }

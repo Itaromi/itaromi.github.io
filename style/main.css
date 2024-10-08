@@ -6,6 +6,7 @@
 
 :root {
     --color-main-black: #23272a;
+    --color-main-grey: rgba(200, 200, 200, 0.5);
 }
 
 * {
@@ -17,9 +18,7 @@
 
 body {
     height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    margin: 0 10rem;
 }
 
 a {

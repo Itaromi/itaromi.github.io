@@ -12,9 +12,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;    
+    padding: 2rem 0;    
     background-color: white;
-    margin: 0 5rem; 
+    margin: 0 10rem; 
     color: var(--color-main-black);
 }
 
