@@ -12,14 +12,14 @@
     margin: 0;
     padding: 0;
     cursor: url('/assets/images/icons/arrowhead-rounded-outline.svg'), auto;
+    font-family: "Jetbrains", sans-serif;
 }
 
-html, body {
+body {
     height: 100%;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    font-family: "Jetbrains", sans-serif;
 }
 
 header {
@@ -76,7 +76,6 @@ header {
 .discover {
     display: flex;
     flex-direction: column;
-    margin-left: 2rem;
     z-index: 20;
 }
 
@@ -101,13 +100,10 @@ header {
 }
 
 .button-action button {
-    margin-right: 1rem;
-    padding: 0.5rem 1rem;
     cursor: url('/assets/images/icons/hand-pointer.svg'), auto;
     border-radius: 20px;
     height: 3rem;
     width: 10rem;
-   
 }   
 
 #button-cv {
@@ -134,7 +130,7 @@ header {
 
 .social-links {
     display: flex;
-    gap: 1rem;
+    gap: 0,5rem;
     margin-top: 1rem;
     z-index: 20;
 }
@@ -142,11 +138,13 @@ header {
 ul li {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 3.5rem;
 }
 
 .social-links  img {
     cursor: url('/assets/images/icons/hand-pointer.svg'), auto;
+    width: 100%;
+    height: 50px;
 }
 
 a {
