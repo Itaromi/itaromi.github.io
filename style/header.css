@@ -16,6 +16,7 @@ header {
     background-color: white;
     margin: 0 10rem; 
     color: var(--color-main-black);
+    cursor: url('/assets/images/icons/arrowhead-rounded-outline.svg'), auto;
 }
 
 .logo span {
