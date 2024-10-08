@@ -1,0 +1,23 @@
+/* header.css */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8); 
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;    
+    background-color: white;
+    margin: 0 5rem; 
+    color: var(--color-main-black);
+}
+
+.logo span {
+    cursor: url('/assets/images/icons/hand-pointer.svg'), auto;
+}

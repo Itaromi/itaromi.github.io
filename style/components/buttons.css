@@ -1,0 +1,29 @@
+/* buttons.css */
+.button-action button {
+    cursor: url('/assets/images/icons/hand-pointer.svg'), auto;
+    border-radius: 20px;
+    height: 3rem;
+    width: 10rem;
+}
+
+#button-cv {
+    color: var(--color-main-black);
+    border: 2px solid var(--color-main-black);
+    background-color: white;
+}
+
+#button-cv:hover {
+    background-color: var(--color-main-black);
+    color: white;
+}
+
+#button-contact {
+    background-color: var(--color-main-black);
+    border: 2px solid var(--color-main-black);
+    color: white;
+}
+
+#button-contact:hover {
+    background-color: white;
+    color: var(--color-main-black);
+}

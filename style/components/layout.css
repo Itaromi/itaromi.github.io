@@ -1,0 +1,68 @@
+/* layout.css */
+.presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13rem;
+}
+
+.presentation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.Itaromi-img {
+    z-index: 20;
+    position: relative;
+}
+
+.Itaromi-img img {
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.discover {
+    display: flex;
+    flex-direction: column;
+    z-index: 20;
+}
+
+.discover h1, .discover h2, .discover p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.discover h1 {
+    font-size: 3rem;
+    color: var(--color-main-black);
+}
+
+.discover h2 {
+    font-size: 2rem;
+    color: gray;
+}
+
+.social-links {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    z-index: 20;
+}
+
+ul li {
+    list-style: none;
+    display: flex;
+    gap: 3.5rem;
+}
+
+.social-links img {
+    cursor: url('/assets/images/icons/hand-pointer.svg'), auto;
+    width: 100%;
+    height: 50px;
+}
