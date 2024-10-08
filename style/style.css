@@ -9,7 +9,6 @@
     margin: 0;
     padding: 0;
     cursor: url('/assets/images/icons/arrowhead-rounded-outline.svg'), auto;
-    cursor: url('/assets/images/icons/arrowhead-rounded-outline.svg'), auto;
 }
 
 html, body {
@@ -18,15 +17,8 @@ html, body {
     padding: 0;
     overflow: hidden;
     font-family: "Jetbrains", sans-serif;
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-family: "Jetbrains", sans-serif;
 }
 
-header {
 header {
     width: 100%;
     position: fixed;
@@ -46,8 +38,6 @@ header {
     margin: 0 5rem 0 5rem; 
 }
 
-.logo span {
-    cursor: url('/assets/images/icons/hand-pointer.svg'), auto;
 .logo span {
     cursor: url('/assets/images/icons/hand-pointer.svg'), auto;
 }
