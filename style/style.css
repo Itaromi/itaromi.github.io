@@ -3,6 +3,10 @@
     src: url('/assets/fonts/ttf/JetBrainsMono-Medium.ttf');
 }
 
+:root {
+    --color-main-black: #23272a;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -27,7 +31,6 @@ header {
     z-index: 1;
 }
 
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -35,6 +38,7 @@ header {
     padding: 1rem 0;    
     background-color: white;
     margin: 0 5rem 0 5rem; 
+    color: var(--color-main-black);
 }
 
 .logo span {
@@ -45,15 +49,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 6rem; 
-}
-
-.presentation-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 6rem; 
+    margin-top: 13rem; 
 }
 
 .presentation-container {
@@ -72,18 +68,26 @@ header {
 .Itaromi-img img {
     max-width: 100%;
     height: auto;
-    width: 300px; 
+    width: 250px; 
     border-radius: 50%;
+    margin-bottom: 1rem; 
 }
 
 .discover {
     display: flex;
     flex-direction: column;
     margin-left: 2rem;
+    z-index: 20;
+}
+
+.discover h1, .discover h2, .discover p {
+    text-align: center; 
+    margin-bottom: 1rem;
 }
 
 .discover h1 {
     font-size: 3rem;
+    color: var(--color-main-black);
 }
 
 .discover h2 {
@@ -93,18 +97,46 @@ header {
 
 .button-action {
     margin-top: 1.5rem;
+    z-index: 20;
 }
 
 .button-action button {
     margin-right: 1rem;
     padding: 0.5rem 1rem;
     cursor: url('/assets/images/icons/hand-pointer.svg'), auto;
+    border-radius: 20px;
+    height: 3rem;
+    width: 10rem;
+   
+}   
+
+#button-cv {
+    color: var(--color-main-black);
+    border: 2px solid var(--color-main-black);
+    background-color: white;
+}
+
+#button-cv:hover {
+    background-color: var(--color-main-black);
+    color: white;
+}
+
+#button-contact {
+    background-color: var(--color-main-black);
+    border: 2px solid var(--color-main-black);
+    color: white;
+}
+
+#button-contact:hover {
+    background-color: white;
+    color: var(--color-main-black);
 }
 
 .social-links {
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
+    z-index: 20;
 }
 
 ul li {
@@ -118,7 +150,7 @@ ul li {
 }
 
 a {
-    color: black;
+    color: var(--color-main-black);
     text-decoration: none;
     font-weight: bold;
     cursor: url('/assets/images/icons/hand-pointer.svg'), auto;
@@ -131,8 +163,8 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 10; /* Les carrés passent au-dessus de tout, sauf de l'image Itaromi */
-    pointer-events: none; /* Les carrés ne bloquent pas les interactions avec le contenu en dessous */
+    z-index: 10; 
+    pointer-events: none; 
 }
 
 .squares {
@@ -142,8 +174,8 @@ a {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: 10; /* Au-dessus de la navbar */
-    pointer-events: none; /* Permet les clics sur les éléments en dessous */
+    z-index: 10; 
+    pointer-events: none; 
 }
 
 .squares li {
