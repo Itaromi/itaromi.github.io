@@ -1,6 +1,22 @@
-let statusArray = ["Developers Frontend", "Developers Backend", "Streamer", "Contractor"];
+let statusArray = ["Developer Frontend", "Developer Backend", "Streamer", "Contractor"];
 let currentIndex = 0;
 let h2Element = document.getElementById("status");
+
+// Fixer la hauteur initiale de l'élément en fonction du texte le plus long
+function setFixedHeight() {
+    let maxHeight = 0;
+    // Temporarily assign the longest text and measure its height
+    statusArray.forEach((text) => {
+        h2Element.textContent = text;
+        const height = h2Element.offsetHeight;
+        if (height > maxHeight) {
+            maxHeight = height;
+        }
+    });
+    // Fixer la hauteur à la plus grande taille trouvée
+    h2Element.style.height = maxHeight + 'px';
+    h2Element.textContent = ''; // Réinitialiser le texte après le calcul
+}
 
 function typeWriter(text, index, callback) {
     if (index < text.length) {
@@ -35,5 +51,9 @@ function startTextAnimation() {
     });
 }
 
-// Lancer l'animation
+// Lancer l'animation après avoir fixé la hauteur
+setFixedHeight();
 startTextAnimation();
+
+
+

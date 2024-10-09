@@ -16,7 +16,7 @@
 }
 
 .Itaromi-img {
-    z-index: 20;
+    z-index: 40;
     position: relative;
 }
 
@@ -31,7 +31,7 @@
 .discover {
     display: flex;
     flex-direction: column;
-    z-index: 20;
+    z-index: 40;
 }
 
 .discover h1, .discover h2, .discover p {
@@ -53,7 +53,7 @@
     display: flex;
     gap: 0.5rem;
     margin-top: 1rem;
-    z-index: 20;
+    z-index: 40;
 }
 
 ul li {
@@ -97,6 +97,7 @@ ul li {
     height: auto;
     width: 25rem;
     border-radius: 20px;
+    z-index: 40;
 }
 
 .aboutme-section-information {
