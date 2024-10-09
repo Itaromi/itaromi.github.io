@@ -4,7 +4,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color: rgba(255, 255, 255, 0.8);
     z-index: 1;
 }
 
@@ -12,15 +12,20 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;    
+    padding: 2rem 0;
     background-color: white;
-    margin: 0 10rem; 
+    margin: 0 10rem;
     color: var(--color-main-black);
     cursor: url('/assets/images/icons/arrowhead-rounded-outline.svg'), auto;
 }
 
 .nav-links a {
     cursor: url('/assets/images/icons/hand-pointer.svg'), auto;
+}
+
+.nav-links a:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 .logo span {

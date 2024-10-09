@@ -139,3 +139,16 @@ ul li {
 .aboutme-section-education img{
     height: 50px;
 }
+
+.cursor {
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}

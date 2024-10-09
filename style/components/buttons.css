@@ -15,6 +15,7 @@
 #button-cv:hover {
     background-color: var(--color-main-black);
     color: white;
+    transition: 0.3s;
 }
 
 #button-contact {
@@ -26,4 +27,5 @@
 #button-contact:hover {
     background-color: white;
     color: var(--color-main-black);
+    transition: 0.3s;
 }
