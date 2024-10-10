@@ -15,77 +15,6 @@
     width: 50%;
 }
 
-.Itaromi-img {
-    z-index: 40;
-    position: relative;
-}
-
-.Itaromi-img img {
-    max-width: 100%;
-    height: auto;
-    width: 300px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-}
-
-.discover {
-    display: flex;
-    flex-direction: column;
-    z-index: 40;
-}
-
-.discover h1, .discover h2, .discover p {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.discover h1 {
-    font-size: 3rem;
-    color: var(--color-main-black);
-}
-
-.discover h2 {
-    font-size: 2rem;
-    color: gray;
-}
-
-.social-links {
-    display: flex;
-    gap: 0.5rem;
-    margin-top: 1rem;
-    z-index: 40;
-}
-
-ul li {
-    list-style: none;
-    display: flex;
-    gap: 3.5rem;
-}
-
-.social-links img {
-    cursor: url('/assets/images/icons/hand-pointer.svg'), auto;
-    width: 100%;
-    height: 50px;
-}
-
-.aboutme-section-transition {
-    margin-top: 10rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-}
-
-.aboutme-section-transition p {
-    color: gray;
-}
-
-.aboutme-section-transition h1 {
-    margin-top: 0.5rem;
-    color: var(--color-main-black);
-    font-size: 3rem;
-}
-
 .aboutme-section {
     margin-top: 10rem;
     display: flex;
@@ -95,50 +24,10 @@ ul li {
     margin-right: auto;
 }
 
-.aboutme-section img {
-    width: 20rem; 
-    height: 20rem; 
-    border-radius: 20px;
-    margin-right: 2rem;
-    object-fit: cover; 
-    object-position: center; 
-}
-
-
 .aboutme-section-information {
     display: flex;
     justify-content: space-between;
     width: 100%;
     flex-wrap: wrap;
     gap: 2rem;
-}
-
-.aboutme-section-experience, .aboutme-section-education {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: solid 2px gray;
-    text-align: center;
-    border-radius: 20px;
-    width: calc(50% - 1rem);
-    box-sizing: border-box;
-}
-
-.aboutme-section-experience img, .aboutme-section-education img {
-    width: 30px;
-    height: 30px;
-    margin: 0 auto;
-}
-
-.aboutme-description {
-    text-align: center;
-    text-align: justify;
-    text-justify: inter-word;
-    color: gray;
-    width: 100%;
-}
-
-.aboutme-section-experience p, .aboutme-section-education p {
-    color: gray;
 }

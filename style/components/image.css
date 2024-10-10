@@ -1,0 +1,29 @@
+/* image.css */
+
+.Itaromi-img {
+    z-index: 40;
+    position: relative;
+}
+
+.Itaromi-img img {
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.aboutme-section img {
+    width: 20rem; 
+    height: 20rem; 
+    border-radius: 20px;
+    margin-right: 2rem;
+    object-fit: cover; 
+    object-position: center; 
+}
+
+.aboutme-section-experience img, .aboutme-section-education img {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+}

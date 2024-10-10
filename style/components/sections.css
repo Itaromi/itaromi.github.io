@@ -1,0 +1,21 @@
+/* sections.css */
+
+.aboutme-section-experience, .aboutme-section-education {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px gray;
+    text-align: center;
+    border-radius: 20px;
+    width: calc(50% - 1rem);
+    box-sizing: border-box;
+}
+
+.aboutme-section-transition {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}

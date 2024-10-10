@@ -30,3 +30,24 @@
     color: var(--color-main-black);
     transition: 0.3s;
 }
+
+/* buttons.css */
+
+.social-links {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    z-index: 40;
+}
+
+.social-links img {
+    cursor: url('/assets/images/icons/hand-pointer.svg'), auto;
+    width: 100%;
+    height: 50px;
+}
+
+ul li {
+    list-style: none;
+    display: flex;
+    gap: 3.5rem;
+}
