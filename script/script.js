@@ -56,4 +56,3 @@ setFixedHeight();
 startTextAnimation();
 
 
-

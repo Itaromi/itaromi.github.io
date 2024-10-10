@@ -13,7 +13,7 @@
     margin-bottom: 1rem;
 }
 
-.aboutme-section img {
+.aboutme-section img, .experience-section img {
     width: 20rem; 
     height: 20rem; 
     border-radius: 20px;
@@ -22,7 +22,15 @@
     object-position: center; 
 }
 
-.aboutme-section-experience img, .aboutme-section-education img {
+.experience-section img {
+    width: 30px;
+    height: 30px; 
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+.aboutme-section-experience img, .aboutme-section-education img{
     width: 30px;
     height: 30px;
     margin: 0 auto;

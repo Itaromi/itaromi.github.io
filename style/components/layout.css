@@ -31,3 +31,8 @@
     flex-wrap: wrap;
     gap: 2rem;
 }
+
+.fronted-container {
+    border: solid 2px gray;
+}
+
