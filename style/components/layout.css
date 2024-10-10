@@ -89,67 +89,56 @@ ul li {
 .aboutme-section {
     margin-top: 10rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 100%;
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .aboutme-section img {
-    height: auto;
-    width: 25rem;
+    width: 20rem; 
+    height: 20rem; 
     border-radius: 20px;
-    z-index: 40;
+    margin-right: 2rem;
+    object-fit: cover; 
+    object-position: center; 
 }
+
 
 .aboutme-section-information {
-    margin-left: 10rem;
     display: flex;
-    gap: 5rem;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
-.aboutme-section-experience {
+.aboutme-section-experience, .aboutme-section-education {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: solid 2px gray;
     text-align: center;
     border-radius: 20px;
-    padding: 3rem;
+    width: calc(50% - 1rem);
+    box-sizing: border-box;
 }
 
-.aboutme-section-experience p{
-    color: gray;
+.aboutme-section-experience img, .aboutme-section-education img {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
 }
 
-.aboutme-section-experience img{
-    height: 50px;
-}
-
-
-.aboutme-section-education {
-    display: flex;
-    flex-direction: column;
-    border: solid 2px gray;
+.aboutme-description {
     text-align: center;
-    border-radius: 20px;
-    padding: 3rem;
-}
-
-.aboutme-section-education p {
+    text-align: justify;
+    text-justify: inter-word;
     color: gray;
+    width: 100%;
 }
 
-.aboutme-section-education img{
-    height: 50px;
-}
-
-.cursor {
-    font-weight: bold;
-    font-size: 24px;
-    color: black;
-    animation: blink 0.7s infinite;
-}
-
-@keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
+.aboutme-section-experience p, .aboutme-section-education p {
+    color: gray;
 }

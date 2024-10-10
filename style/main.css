@@ -20,7 +20,6 @@
 body {
     height: 100%;
     margin: 0 10rem;
-    cursor: url('/assets/images/icons/arrowhead-rounded-outline.svg'), auto;
 }
 
 a {

@@ -12,12 +12,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
-    background-color: white;
-    margin: 0 10rem;
+    padding: 2rem 10rem; 
+    background-color: white; 
     color: var(--color-main-black);
     cursor: url('/assets/images/icons/arrowhead-rounded-outline.svg'), auto;
 }
+
 
 .nav-links a {
     cursor: url('/assets/images/icons/hand-pointer.svg'), auto;
