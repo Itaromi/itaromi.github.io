@@ -1,184 +1,370 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/main.css">
-    <link rel="stylesheet" href="/style/header.css">
-    <link rel="stylesheet" href="/style/footer.css">
-    <link rel="stylesheet" href="/style/components/buttons.css">
-    <link rel="stylesheet" href="/style/components/layout.css">
-    <link rel="stylesheet" href="/style/components/image.css">
-    <link rel="stylesheet" href="/style/components/text.css">
-    <link rel="stylesheet" href="/style/components/sections.css">
-
-
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Youn Sylvestre | Portfolio</title>
+    <link rel="stylesheet" href="/style/style.css"/>
+    <link rel="stylesheet" href="/style/mediaqueries.css"/>
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
-    <title>Portfolio - Itaromi</title>
 </head>
-
 <body>
-    <header >
-        <nav  class="navbar">
-            <div  class="logo">
-                <span><a href="#menu">Itaromi</a></span>
-            </div>
-            <ul class="nav-links">
-                <li>
-                    <a href="#about">About</a>
-                    <a href="#experience">Experience</a>
-                    <a href="#Projets">Projects</a>
-                    <a href="#Contacts">Contacts</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="menu" class="presentation">
-        <div class="Itaromi-img">
-            <img src="/assets/images/Itaromi.png" alt="Itaromi">
+<nav id="desktop-nav">
+    <div class="logo">Youn Sylvestre</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<nav id="hamburger-nav">
+    <div class="logo">Youn Sylvestre</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <div class="presentation-container">
-            <div class="discover">
-                <p>Hello, I'm</p>
-                <h1>Itaromi</h1>
-                <h2 id="status"></h2>
-            </div>
-
-            <div class="button-action">
-                <a href="/assets/contents/SylvestreYoun.pdf" download>
-                    <button id="button-cv">Download CV</button>
-                </a>
-
-                <button id="button-contact">Contact Info</button>
-            </div>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/youn-sylvestre/"><img
-                        src="/assets/images/icons/icons8-linkedin.svg" alt="Linkedin"></a>
-                <a id="about" href="https://github.com/Itaromi"><img src="/assets/images/icons/icons8-github.svg" alt="Github"></a>
-
-            </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
-    </section>
-    <section class="section-transition">
-        <p>Get To Know More</p>
-        <h1>About Me</h1>
-    </section>
-    <section class="aboutme-section">
-        <div>
-            <img src="/assets/images/Itaromi.png" alt="Itaromi">
+    </div>
+</nav>
+<section id="profile">
+    <div class="section__pic-container">
+        <img id="itaromi-alt" src="/assets/images/Itaromi.png" alt="Itaromi alt"/>
+    </div>
+    <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Youn Sylvestre</h1>
+        <p id="status" class="section__text__p2"></p>
+        <div class="btn-container">
+            <button
+                    class="btn btn-color-2"
+                    onclick="window.open('/assets/cv.pdf')"
+            >
+                Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info
+            </button>
         </div>
-        <div class="aboutme-section-information">
-            <div class="aboutme-section-experience">
-                <img src="/assets/images/icons/medal-svgrepo-com.svg" alt="medal">
-                <span>Experience</span>
-                <p>2+ years</p>
-                <p>Frontend Development</p>
-            </div>
-            <div class="aboutme-section-education">
-                <img src="/assets/images/icons/book-svgrepo-com.svg" alt="people">
-                <span>Education</span>
-                <p>Bac STI2D</p>
-                <p>Bts Système Numérique (IR)</p>
-            </div>
-            <div class="aboutme-description">
-                <p>Je suis passionné par le développement informatique depuis de nombreuses années. Après avoir obtenu
-                    un BTS Systèmes Numériques, je poursuis actuellement un Bachelor en Informatique (Bac+3). Chaque
-                    projet me permet de m'immerger pleinement, avec un fort engagement pour écrire un code propre et
-                    développer des solutions efficaces.</p>
-            </div>
+        <div id="socials-container">
+            <img
+                    src="/assets/images/icons/linkedin.png"
+                    alt="My LinkedIn profile"
+                    class="icon"
+                    onclick="location.href='https://fr.linkedin.com/in/youn-sylvestre'"
+            />
+            <img
+                    src="/assets/images/icons/github.png"
+                    alt="My Github profile"
+                    class="icon"
+                    onclick="location.href='https://github.com/Itaromi'"
+            />
         </div>
-    </section>
-    <section id="experience" class="section-transition">
-        <p>Explore My</p>
-        <h1>Experience</h1>
-    </section>
-    <section class="experience-section">
-        <div class="frontend-container">
-            <h2>Frontend Development</h2>
-            <div>
-                <img src="/assets/images/icons/check-mark-on-cloud-svgrepo-com.svg" alt="checkmark">
-                <div class="text-content">
-                    <h1>HTML</h1>
-                    <p>Experienced</p>
+    </div>
+</section>
+<section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <div class="section__pic-container">
+            <img
+                    src="/assets/images/Itaromi2.jpg"
+                    alt="Profile picture"
+                    class="about-pic"
+            />
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img
+                            src="/assets/images/icons/experience.png"
+                            alt="Experience icon"
+                            class="icon"
+                    />
+                    <h3>Experience</h3>
+                    <p>2+ years <br/>Computer Science</p>
+                </div>
+                <div class="details-container">
+                    <img
+                            src="/assets/images/icons/education.png"
+                            alt="Education icon"
+                            class="icon"
+                    />
+                    <h3>Education</h3>
+                    <p>H.N.D Digital Systems<br/>Bachelor.D Computer Science</p>
                 </div>
             </div>
-            <div>
-                <img src="/assets/images/icons/check-mark-on-cloud-svgrepo-com.svg" alt="checkmark">
-                <div class="text-content">
-                    <h1>CSS</h1>
-                    <p>Experienced</p>
-                </div>
-            </div>
-            <div>
-                <img src="/assets/images/icons/check-mark-on-cloud-svgrepo-com.svg" alt="checkmark">
-                <div class="text-content">
-                    <h1>VUE.JS</h1>
-                    <p>Basic</p>
-                </div>
-            </div>
-            <div>
-                <img src="/assets/images/icons/check-mark-on-cloud-svgrepo-com.svg" alt="checkmark">
-                <div class="text-content">
-                    <h1>JAVASCRIPT</h1>
-                    <p>Basic</p>
-                </div>
-            </div>
-            <div>
-                <img src="/assets/images/icons/check-mark-on-cloud-svgrepo-com.svg" alt="checkmark">
-                <div class="text-content">
-                    <h1>Typescript</h1>
-                    <p>Basic</p>
-                </div>
+            <div class="text-container">
+                <p>
+                    I have been passionate about software development for many years. After obtaining a Higher National
+                    Diploma (HND) in Digital Systems, I am currently pursuing a Bachelor's degree in Computer Science
+                    (Bac+3). Each project allows me to fully immerse myself, with a strong commitment to writing clean
+                    code and developing efficient solutions.
+                </p>
             </div>
         </div>
-    
-        <div class="backend-container">
-            <h2>Backend Development</h2>
-            <div>
-                <img src="/assets/images/icons/check-mark-on-cloud-svgrepo-com.svg" alt="checkmark">
-                <div class="text-content">
-                    <h1>Git</h1>
-                    <p>Experienced</p>
+    </div>
+    <img
+            src="/assets/images/icons/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#experience'"
+    />
+</section>
+<section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container">
+                <h2 class="experience-sub-title">Frontend Development</h2>
+                <div class="article-container">
+                    <article>
+                        <img
+                                src="/assets/images/icons/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img
+                                src="/assets/images/icons/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img
+                                src="/assets/images/icons/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>Vue.js</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img
+                                src="/assets/images/icons/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img
+                                src="/assets/images/icons/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>TypeScript</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
                 </div>
             </div>
-            <div>
-                <img src="/assets/images/icons/check-mark-on-cloud-svgrepo-com.svg" alt="checkmark">
-                <div class="text-content">
-                    <h1>PYTHON</h1>
-                    <p>Intermediate</p>
-                </div>
-            </div>
-            <div>
-                <img src="/assets/images/icons/check-mark-on-cloud-svgrepo-com.svg" alt="checkmark">
-                <div class="text-content">
-                    <h1>PHP</h1>
-                    <p>Intermediate</p>
-                </div>
-            </div>
-            <div>
-                <img src="/assets/images/icons/check-mark-on-cloud-svgrepo-com.svg" alt="checkmark">
-                <div class="text-content">
-                    <h1>Java</h1>
-                    <p>Basic</p>
-                </div>
-            </div>
-            <div>
-                <img src="/assets/images/icons/check-mark-on-cloud-svgrepo-com.svg" alt="checkmark">
-                <div class="text-content">
-                    <h1>C++</h1>
-                    <p>Intermediate</p>
+            <div class="details-container">
+                <h2 class="experience-sub-title">Backend Development</h2>
+                <div class="article-container">
+                    <article>
+                        <img
+                                src="/assets/images/icons/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>C++</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img
+                                src="/assets/images/icons/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>Node JS</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img
+                                src="/assets/images/icons/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>Java</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img
+                                src="/assets/images/icons/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>Git</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
                 </div>
             </div>
         </div>
-    </section>
-    
-</body>
+    </div>
+    <img
+            src="/assets/images/icons/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#projects'"
+    />
+</section>
+<section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img
+                            src="/assets/images/project-1.png"
+                            alt="Project 1"
+                            class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Project One</h2>
+                <div class="btn-container">
+                    <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/Itaromi/skin_finder'"
+                    >
+                        Github
+                    </button>
+                    <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://itaromi.fr/skin_finder/'"
+                    >
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img
+                            src="/assets/images/project-1.png"
+                            alt="Project 2"
+                            class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Project Two</h2>
+                <div class="btn-container">
+                    <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/'"
+                    >
+                        Github
+                    </button>
+                    <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/'"
+                    >
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img
+                            src="/assets/images/project-1.png"
+                            alt="Project 3"
+                            class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Project Three</h2>
+                <div class="btn-container">
+                    <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/'"
+                    >
+                        Github
+                    </button>
+                    <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/'"
+                    >
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img
+            src="/assets/images/icons/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#contact'"
+    />
+</section>
+<section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img
+                    src="/assets/images/icons/email.png"
+                    alt="Email icon"
+                    class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:Itaromi.pro@gmail.com">Itaromi.pro@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img
+                    src="/assets/images/icons/linkedin.png"
+                    alt="LinkedIn icon"
+                    class="icon contact-icon"
+            />
+            <p><a href="https://fr.linkedin.com/in/youn-sylvestre">LinkedIn</a></p>
+        </div>
+    </div>
+</section>
 <footer>
-    <a href="https://ko-fi.com/itaromi"><img align="left" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50"
-            width="210" alt="itaromi" /></a>
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p>Copyright &#169; 2024 Sylvestre Youn. All Rights Reserved.</p>
 </footer>
-<script type="text/javascript" src="/script/script.js"></script>
-
+<script src="/script/script.js"></script>
+</body>
 </html>
