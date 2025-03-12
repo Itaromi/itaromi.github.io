@@ -5,7 +5,6 @@ let h2Element = document.getElementById("status");
 // Fixer la hauteur initiale de l'élément en fonction du texte le plus long
 function setFixedHeight() {
     let maxHeight = 0;
-    // Temporarily assign the longest text and measure its height
     statusArray.forEach((text) => {
         h2Element.textContent = text;
         const height = h2Element.offsetHeight;
